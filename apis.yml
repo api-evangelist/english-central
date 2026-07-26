@@ -1,8 +1,24 @@
 aid: english-central
+accessModel:
+  pricing: unknown
+  onboarding: approval
+  trial: false
+  try_now: false
+  public: false
+  label: Requires approval
+  confidence: medium
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/english-central.png
 name: English Central
-description: 'English Central is a company surfaced as a portfolio company of gv and added to the API
-  Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'English Central is an online English language learning platform that combines a large
+  library of authentic video content with speech-recognition-driven pronunciation practice, adaptive
+  vocabulary and quiz tools, and live one-on-one lessons with tutors. It serves individual learners as
+  well as schools, universities, and enterprise/partner programs (including regional partners in Japan
+  and elsewhere). Backed by GV (Google Ventures), it operates in the consumer education / EdTech sector.
+  No public developer API, SDK, or developer portal was found during enrichment; partner integrations
+  appear to be handled privately.'
 url: https://raw.githubusercontent.com/api-evangelist/english-central/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Consumer
+- Education
+- EdTech
+- Language Learning
+- E-Learning
+- English
+- Video
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/english-central-domain-security.yml
 - type: Website
   url: http://englishcentral.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
